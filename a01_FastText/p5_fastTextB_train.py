@@ -7,11 +7,13 @@ sys.setdefaultencoding('utf8')
 import tensorflow as tf
 import numpy as np
 from p5_fastTextB_model import fastTextB as fastText
-from p4_zhihu_load_data import load_data,create_voabulary,create_voabulary_label
+#from p4_zhihu_load_data import load_data,create_voabulary,create_voabulary_label
 from tflearn.data_utils import to_categorical, pad_sequences
 import os
 import word2vec
 import pickle
+execfile("/home/gensim_word2vec_fastext/text_classification/aa1_data_util/data_util_zhihu.py") 
+#no module named p4_zhihu_load_data you have to import the above file somehow 
 
 #configuration
 FLAGS=tf.app.flags.FLAGS
